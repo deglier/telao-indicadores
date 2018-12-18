@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <!--<meta http-equiv="refresh" content="20" />-->
+    <meta http-equiv="cache-control" content="no-cache" />
+    <meta http-equiv="expires" content="0" />
+    <title>Dashboard GAB</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <a class="navbar-brand" href="#">
+        <img src="./img/neobpo_logo_header.png" alt="" height="40" />
+        <img src="./img/grupo-aguas-do-brasil-logo.png" height="30" alt="" />
+      </a>
+      <span class="navbar-text">Dashboard Operacional</span>
+    </nav>
+    <div class="container-fluid" id="app">
+        <div class="row">
+          <div class="col-sm text-center"> <h6>Cham. mais Antiga</h6> <h2>{{ chamMaisAntiga }}</h2></div>
+          <div class="col-sm text-center"> <h6>Cham. em espera</h6> <h2>{{ fila}}</h2></div>
+          <div class="col-sm text-center"> <h6>TME</h6> <h2>{{ tme}}</h2></div>
+          <div class="col-sm text-center"> <h6>TMA</h6> <h2>{{ tma }}</h2></div>
+          <div class="col-sm text-center"> <h6>Agentes Logado</h6> <h2>{{ agntLogados }}</h2></div>
+        </div>
+        <div class="row">
+          <div class="col-sm" style="height:30vh">
+            <canvas id="chartNs"></canvas>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script
+      type="text/javascript"
+      src="./node_modules/vue/dist/vue.js"
+    ></script>
+    <script type="text/javascript" src="./js/Chart.min.js"></script>
+    <script type="text/javascript" src="./js/main.js"></script>
+
+    <script type="text/javascript"></script>
+  </body>
+</html>

@@ -1,0 +1,17 @@
+//$body-bg: #efefef;
+$body-color: #333;
+@import "./node_modules/bootstrap/scss/bootstrap";
+
+#app {
+    margin-top: .5rem;
+}
+.boxes {
+    
+}
+
+.box {
+    //background-color: #fefefe;
+    padding: .3rem .3rem;
+    border-radius: .3rem;
+    padding: .3rem
+}
